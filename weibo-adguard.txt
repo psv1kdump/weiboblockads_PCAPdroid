@@ -1,0 +1,13 @@
+! Title: Weibo Android - AdGuard experimental rules
+! Description: Candidate ad-related endpoint filters observed in a user-provided PCAPdroid capture.
+! Status: EXPERIMENTAL - not validated on-device.
+! Last updated: 2026-10-26
+!
+! These are path-specific candidates to avoid blocking entire Weibo service domains.
+! The Android package ID com.sina.weibo is assumed for the official Weibo app; verify it on your device.
+!
+||adstrategy.biz.weibo.com/v3/strategy/ad^$app=com.sina.weibo
+||bootpreload.uve.weibo.com/v2/ad/preload^$app=com.sina.weibo
+||mediadata.api.weibo.com/wbapplua/wbpullad.lua^$app=com.sina.weibo
+||ef-dongfeng.tanx.com/tanx^$app=com.sina.weibo
+||df.tanx.com/spf3^$app=com.sina.weibo
